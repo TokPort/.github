@@ -44,6 +44,17 @@ image = client.images.generate(model="seedream-5-pro", prompt="a lighthouse at d
 
 Create a key at **[tokport.io/register](https://tokport.io/register?utm_source=github&utm_medium=org_profile)**. Then read the [quickstart](https://tokport.io/docs?utm_source=github&utm_medium=org_profile), the [SDK guides](https://tokport.io/docs/clients?utm_source=github&utm_medium=org_profile) or the [MCP setup](https://tokport.io/docs/mcp?utm_source=github&utm_medium=org_profile).
 
+## Official SDKs
+
+| Language | Install | Repo |
+| --- | --- | --- |
+| Python | `pip install tokport` | [TokPort/tokport-python](https://github.com/TokPort/tokport-python) |
+| TypeScript / JavaScript | `npm install @tokport/client` | [TokPort/tokport-js](https://github.com/TokPort/tokport-js) |
+| Vercel AI SDK | `npm install @tokport/ai-sdk-provider` | [TokPort/tokport-js](https://github.com/TokPort/tokport-js/tree/main/packages/ai-sdk-provider) |
+| Go | `go get github.com/TokPort/tokport-go` | [TokPort/tokport-go](https://github.com/TokPort/tokport-go) |
+
+Every SDK covers sync calls, the queue (with live status, webhooks and cancellation) and webhook verification. Any OpenAI SDK works too: just point its base URL at `https://api.tokport.io/v1`.
+
 ## Popular models
 
 | Image | Video |
